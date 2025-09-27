@@ -3,6 +3,11 @@ const http = require('http');   // For creating the HTTP server
 const fs = require('fs');       // For reading files from the filesystem
 const path = require('path');   // For safely handling file paths
 
+// Import ffmpeg for audio handling
+const ffmpegPath = require('ffmpeg-static');
+const ffmpeg = require('fluent-ffmpeg');
+ffmpeg.setFfmpegPath(ffmpegPath);
+
 // Create an HTTP server
 const server = http.createServer((req, res) => {
     /**
@@ -110,7 +115,7 @@ const server = http.createServer((req, res) => {
 });
 
 // Start the server
-const PORT = process.env.PORT || 3000; // Railway will inject PORT
+const PORT = process.env.PORT || 3000; // Render will inject PORT
 server.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });
