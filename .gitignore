@@ -19,4 +19,8 @@ Thumbs.db
 *.opus
 *.tmp
 
+# Allow committed audio inside public/audio/
+!public/audio/*.mp3
+!public/audio/*.wav
+!public/audio/*.opus
 
