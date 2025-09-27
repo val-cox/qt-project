@@ -109,7 +109,8 @@ const server = http.createServer((req, res) => {
     }
 });
 
-// Start the server on port 3000
-server.listen(3000, () => {
-    console.log('Server running at http://localhost:3000');
+// Start the server
+const PORT = process.env.PORT || 3000; // Railway will inject PORT
+server.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
 });
