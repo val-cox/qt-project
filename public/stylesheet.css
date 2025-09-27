@@ -1,0 +1,97 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("background/room.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+#story_choice_table {
+    position: absolute;
+
+    left: 25%;
+    top: 255px;
+    transform: translate(-50%, -50%);
+}
+
+#qt_face {
+    position: absolute;
+
+    top: 162px;
+    left: 118px;
+    width: 250px;
+
+    font-size: 125px;
+}
+
+#qt_container {
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: 10px;
+
+    border-radius: 250px;
+    border: solid 1px;
+    border-color: #E3E3E3;
+
+    left: 50%;
+    transform: translate(-50%, 0px);
+
+    box-shadow: 1px 1px 1px #bcbcbc;
+}
+
+#qt_image {
+    position: absolute;
+
+    bottom: 0px;
+    width: 500px;
+}
+
+#send_container {
+    position: absolute;
+    
+    top: 530px;
+    left: 50%;
+
+    visibility: hidden;
+
+    display: flex;
+    flex-direction: row;
+
+    width: fit-content;
+    height: fit-content;
+
+    transform: translate(-50%, 0px);
+}
+
+#question_input {
+    position: relative;
+    
+    padding-left: 12px;
+    text-justify: center;
+
+    width: 500px;
+    height: 2em;
+
+    border-style: solid;
+    border-radius: 25px;
+
+    font-size: 10;
+
+    resize: none;
+}
+
+.send_button {
+    position: relative;
+
+    width: 250px;
+    height: 50px;
+}
