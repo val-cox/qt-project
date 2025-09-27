@@ -13,14 +13,5 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
-# audio/video/temp outputs
-*.mp3
-*.wav
-*.opus
+# Temporary files
 *.tmp
-
-# Allow committed audio inside public/audio/
-!public/audio/*.mp3
-!public/audio/*.wav
-!public/audio/*.opus
-
